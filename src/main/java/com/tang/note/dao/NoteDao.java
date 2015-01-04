@@ -114,7 +114,7 @@ public class NoteDao {
                 notepad.setNoteId(resultSet.getLong("noteId"));
                 notepad.setTitle(resultSet.getString("title"));
                 notepad.setContent(resultSet.getString("content"));
-                notepad.setContent(resultSet.getString("time"));
+                notepad.setTime(resultSet.getString("time"));
                 list.add(notepad);
             }
             resultSet.close();
